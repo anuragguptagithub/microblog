@@ -1,0 +1,127 @@
+2019-04-21 15:08:58,269 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-21 15:42:30,752 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-21 15:42:40,689 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-21 16:08:17,953 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-21 16:08:42,021 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-21 16:08:45,742 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-21 16:09:08,313 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-21 16:09:42,201 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-21 16:09:47,407 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-21 16:10:01,182 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-21 16:10:27,530 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-21 16:16:42,265 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-21 16:22:49,151 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-21 16:31:23,140 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-21 16:31:28,448 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-21 16:32:00,608 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-21 16:38:40,688 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-21 16:45:45,704 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-21 16:48:38,315 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-21 16:48:45,741 ERROR: Exception on /login [POST] [in /home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/trainer/microblog/app/routes.py", line 55, in login
+    if user is None or not user.check_password(form.password.data):
+  File "/home/trainer/microblog/app/models.py", line 41, in check_password
+    return check_password_hash(self.password_hash, password)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/werkzeug/security.py", line 218, in check_password_hash
+    if pwhash.count("$") < 2:
+AttributeError: 'NoneType' object has no attribute 'count'
+2019-04-21 16:48:54,771 ERROR: Exception on /login [POST] [in /home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/trainer/microblog/app/routes.py", line 55, in login
+    if user is None or not user.check_password(form.password.data):
+  File "/home/trainer/microblog/app/models.py", line 41, in check_password
+    return check_password_hash(self.password_hash, password)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/werkzeug/security.py", line 218, in check_password_hash
+    if pwhash.count("$") < 2:
+AttributeError: 'NoneType' object has no attribute 'count'
+2019-04-21 16:49:04,802 ERROR: Exception on /login [POST] [in /home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/trainer/microblog/app/routes.py", line 55, in login
+    if user is None or not user.check_password(form.password.data):
+  File "/home/trainer/microblog/app/models.py", line 41, in check_password
+    return check_password_hash(self.password_hash, password)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/werkzeug/security.py", line 218, in check_password_hash
+    if pwhash.count("$") < 2:
+AttributeError: 'NoneType' object has no attribute 'count'
+2019-04-21 16:49:12,694 ERROR: Exception on /login [POST] [in /home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/trainer/microblog/app/routes.py", line 55, in login
+    if user is None or not user.check_password(form.password.data):
+  File "/home/trainer/microblog/app/models.py", line 41, in check_password
+    return check_password_hash(self.password_hash, password)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/werkzeug/security.py", line 218, in check_password_hash
+    if pwhash.count("$") < 2:
+AttributeError: 'NoneType' object has no attribute 'count'
+2019-04-21 16:50:21,867 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-21 16:51:49,584 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-28 17:16:41,543 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-28 17:18:33,533 ERROR: Exception on /login [POST] [in /home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/trainer/microblog/app/routes.py", line 65, in login
+    if user is None or not user.check_password(form.password.data):
+  File "/home/trainer/microblog/app/models.py", line 41, in check_password
+    return check_password_hash(self.password_hash, password)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/werkzeug/security.py", line 218, in check_password_hash
+    if pwhash.count("$") < 2:
+AttributeError: 'NoneType' object has no attribute 'count'
