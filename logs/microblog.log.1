@@ -1,26 +1,4 @@
-2019-04-28 17:18:49,658 ERROR: Exception on /login [POST] [in /home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/trainer/microblog/app/routes.py", line 65, in login
-    if user is None or not user.check_password(form.password.data):
-  File "/home/trainer/microblog/app/models.py", line 41, in check_password
-    return check_password_hash(self.password_hash, password)
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/werkzeug/security.py", line 218, in check_password_hash
-    if pwhash.count("$") < 2:
-AttributeError: 'NoneType' object has no attribute 'count'
-2019-04-28 18:43:44,641 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-28 19:27:17,519 ERROR: Exception on /user/karan [GET] [in /home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+2019-04-28 19:31:15,554 ERROR: Exception on /follow/karan [GET] [in /home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -36,7 +14,7 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "/home/trainer/microblog/app/routes.py", line 121, in user
+  File "/home/trainer/microblog/app/routes.py", line 122, in user
     next_url=next_url, prev_url=prev_url)
   File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
     context, ctx.app)
@@ -67,7 +45,8 @@ Traceback (most recent call last):
   File "/home/trainer/microblog/venv/lib/python3.6/site-packages/werkzeug/routing.py", line 2181, in build
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.BuildError: Could not build url for endpoint 'follow' with values ['username']. Did you mean 'unfollow' instead?
-2019-04-28 19:27:28,684 ERROR: Exception on /user/karan [GET] [in /home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+2019-04-28 19:31:45,421 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-28 19:31:53,173 ERROR: Exception on /follow/prakash [GET] [in /home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -83,7 +62,7 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "/home/trainer/microblog/app/routes.py", line 121, in user
+  File "/home/trainer/microblog/app/routes.py", line 122, in user
     next_url=next_url, prev_url=prev_url)
   File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
     context, ctx.app)
@@ -114,4 +93,39 @@ Traceback (most recent call last):
   File "/home/trainer/microblog/venv/lib/python3.6/site-packages/werkzeug/routing.py", line 2181, in build
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.BuildError: Could not build url for endpoint 'follow' with values ['username']. Did you mean 'unfollow' instead?
-2019-04-28 19:31:08,194 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-28 19:42:34,897 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:43]
+2019-04-28 19:44:14,250 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:43]
+2019-05-02 00:07:06,676 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:43]
+2019-05-02 00:15:01,191 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:47]
+2019-05-02 01:36:02,596 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:47]
+2019-05-02 01:36:10,180 ERROR: Exception on /reset_password_request [GET] [in /home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/trainer/microblog/app/routes.py", line 25, in reset_password_request
+    title='Reset Password', form=form)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: reset_password_request.html

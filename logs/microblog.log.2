@@ -1,110 +1,4 @@
-2019-04-21 15:08:58,269 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-21 15:42:30,752 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-21 15:42:40,689 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-21 16:08:17,953 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-21 16:08:42,021 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-21 16:08:45,742 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-21 16:09:08,313 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-21 16:09:42,201 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-21 16:09:47,407 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-21 16:10:01,182 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-21 16:10:27,530 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-21 16:16:42,265 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-21 16:22:49,151 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-21 16:31:23,140 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-21 16:31:28,448 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-21 16:32:00,608 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-21 16:38:40,688 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-21 16:45:45,704 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-21 16:48:38,315 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-21 16:48:45,741 ERROR: Exception on /login [POST] [in /home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/trainer/microblog/app/routes.py", line 55, in login
-    if user is None or not user.check_password(form.password.data):
-  File "/home/trainer/microblog/app/models.py", line 41, in check_password
-    return check_password_hash(self.password_hash, password)
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/werkzeug/security.py", line 218, in check_password_hash
-    if pwhash.count("$") < 2:
-AttributeError: 'NoneType' object has no attribute 'count'
-2019-04-21 16:48:54,771 ERROR: Exception on /login [POST] [in /home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/trainer/microblog/app/routes.py", line 55, in login
-    if user is None or not user.check_password(form.password.data):
-  File "/home/trainer/microblog/app/models.py", line 41, in check_password
-    return check_password_hash(self.password_hash, password)
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/werkzeug/security.py", line 218, in check_password_hash
-    if pwhash.count("$") < 2:
-AttributeError: 'NoneType' object has no attribute 'count'
-2019-04-21 16:49:04,802 ERROR: Exception on /login [POST] [in /home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/trainer/microblog/app/routes.py", line 55, in login
-    if user is None or not user.check_password(form.password.data):
-  File "/home/trainer/microblog/app/models.py", line 41, in check_password
-    return check_password_hash(self.password_hash, password)
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/werkzeug/security.py", line 218, in check_password_hash
-    if pwhash.count("$") < 2:
-AttributeError: 'NoneType' object has no attribute 'count'
-2019-04-21 16:49:12,694 ERROR: Exception on /login [POST] [in /home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/trainer/microblog/app/routes.py", line 55, in login
-    if user is None or not user.check_password(form.password.data):
-  File "/home/trainer/microblog/app/models.py", line 41, in check_password
-    return check_password_hash(self.password_hash, password)
-  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/werkzeug/security.py", line 218, in check_password_hash
-    if pwhash.count("$") < 2:
-AttributeError: 'NoneType' object has no attribute 'count'
-2019-04-21 16:50:21,867 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-21 16:51:49,584 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-28 17:16:41,543 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
-2019-04-28 17:18:33,533 ERROR: Exception on /login [POST] [in /home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+2019-04-28 17:18:49,658 ERROR: Exception on /login [POST] [in /home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -125,3 +19,99 @@ Traceback (most recent call last):
   File "/home/trainer/microblog/venv/lib/python3.6/site-packages/werkzeug/security.py", line 218, in check_password_hash
     if pwhash.count("$") < 2:
 AttributeError: 'NoneType' object has no attribute 'count'
+2019-04-28 18:43:44,641 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
+2019-04-28 19:27:17,519 ERROR: Exception on /user/karan [GET] [in /home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/trainer/microblog/app/routes.py", line 121, in user
+    next_url=next_url, prev_url=prev_url)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/trainer/microblog/app/templates/user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/trainer/microblog/app/templates/base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/trainer/microblog/app/templates/user.html", line 15, in block "content"
+    <p><a href="{{ url_for('follow', username=user.username) }}">Follow</a></p>
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/helpers.py", line 345, in url_for
+    force_external=external)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/werkzeug/routing.py", line 2181, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'follow' with values ['username']. Did you mean 'unfollow' instead?
+2019-04-28 19:27:28,684 ERROR: Exception on /user/karan [GET] [in /home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/trainer/microblog/app/routes.py", line 121, in user
+    next_url=next_url, prev_url=prev_url)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/trainer/microblog/app/templates/user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/trainer/microblog/app/templates/base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/trainer/microblog/app/templates/user.html", line 15, in block "content"
+    <p><a href="{{ url_for('follow', username=user.username) }}">Follow</a></p>
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/flask/helpers.py", line 345, in url_for
+    force_external=external)
+  File "/home/trainer/microblog/venv/lib/python3.6/site-packages/werkzeug/routing.py", line 2181, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'follow' with values ['username']. Did you mean 'unfollow' instead?
+2019-04-28 19:31:08,194 INFO: Microblog startup [in /home/trainer/microblog/app/__init__.py:45]
